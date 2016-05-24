@@ -247,20 +247,6 @@ def check_deck():
     sc = session.score
     return locals()
 #################################################################################
-# for synonyms
-def synonym_entry():
-    form = SQLFORM(db.synonyms).process()
-    return locals()
-
-def synonym_display():
-       return locals()
-    
-def synonym_display_cat():
-    category = request.vars.category
-    rows = db(db.synonyms.Word_Type == category).select()
-    return locals()
-
-####################################################################################
 def index():
 
     response.flash = T("Hello World")

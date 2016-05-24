@@ -9,4 +9,3 @@ db.define_table("Suggestions",
     Field('Author',requires=IS_NOT_EMPTY()))
 
 #db.define_table("deck_words", Field("word", requires=IS_NOT_EMPTY()), Field("meaning", IS_NOT_EMPTY()), Field("deck", requires = IS_NOT_EMPTY()))
-db.define_table("synonyms", Field("Word_Type", "string", requires=IS_NOT_EMPTY()),Field("word", "string", requires=IS_NOT_EMPTY()), Field("meaning", "text", requires = IS_NOT_EMPTY()))
